@@ -1,0 +1,14 @@
+gcc publicador.c -o publicador
+gcc suscriptor.c -o suscriptor
+gcc sistema.c -o sistema
+
+rm pipePSC pipeSSC
+mkfifo pipePSC
+mkfifo pipeSSC
+
+./sistema -p pipePSC -s pipeSSC -t 5
+
+./publicador -p pipePSC -f noticias.txt -t 2
+
+./suscriptor -s pipeSSC
+

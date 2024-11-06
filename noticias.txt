@@ -1,0 +1,4 @@
+A:Evento de arte en la ciudad.
+C:Nuevo descubrimiento científico en biología.
+P:Nuevas elecciones programadas para el próximo mes.
+C:Nuevo elemento de tabla periodica descubierto
